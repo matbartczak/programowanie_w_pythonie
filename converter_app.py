@@ -142,13 +142,15 @@ progress = ttk.Progressbar(
     mode="indeterminate"
 )
 
-button = tk.Button(root, text='Otwórz plik', command=UploadAction)
+button = tk.Button(root,bg="dark blue",fg="#ff8820",cursor="hand1",text="Otwórz",font=("arial",12,"bold"),bd=0,command=UploadAction)
+
+
 button.grid(row=1, column=0, columnspan=2, pady=10)
 
-btn_cancel = tk.Button(root, text="Anuluj", command=CancelAction)
+btn_cancel = tk.Button(root,bg="dark blue",fg="#ff8820",cursor="hand1",text="Anuluj",font=("arial",12,"bold"),bd=0, command=CancelAction)
 
-btn_convert_to_mobi = tk.Button(root, text="MOBI", command=ToMobi)
-btn_convert_to_epub = tk.Button(root, text="EPUB", command=ToEpub)
-btn_convert_to_pdf = tk.Button(root, text="PDF", command=ToPdf)
+btn_convert_to_mobi = tk.Button(root,bg="dark blue",fg="#ff8820",cursor="hand1",text="MOBI",font=("arial",12,"bold"),bd=0, command=ToMobi)
+btn_convert_to_epub = tk.Button(root,bg="dark blue",fg="#ff8820",cursor="hand1",text="EPUB",font=("arial",12,"bold"),bd=0, command=ToEpub)
+btn_convert_to_pdf = tk.Button(root,bg="dark blue",fg="#ff8820",cursor="hand1",text="PDF",font=("arial",12,"bold"),bd=0, command=ToPdf)
 
 root.mainloop()
