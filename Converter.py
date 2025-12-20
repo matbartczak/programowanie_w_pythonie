@@ -8,7 +8,6 @@ class Converter():
 
     def set(self, value):
         self.input_file = value
-        print(self.input_file)
 
     def get(self):
         return self.input_file
